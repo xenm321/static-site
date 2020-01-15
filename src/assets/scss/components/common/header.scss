@@ -1,0 +1,70 @@
+.header {
+  width: 100%;
+  margin-top: 2rem;
+  padding: 1.3rem 0 3rem 0;
+  border-bottom: 1px solid $light_gray;
+}
+
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__logo {
+  width: 23%;
+}
+
+.header__nav {
+  display: flex;
+  align-items: center;
+  width: 70%;
+  margin-left: 2rem;
+
+  a {
+    font-size: 2rem;
+    padding-right: 2.5rem;
+    color: $black;
+    text-decoration: none;
+
+    &:hover {
+      font-weight: bold;
+    }
+
+    &:last-child {
+      padding-right: 0;
+    }
+
+    &.add-link {
+      max-width: 18rem;
+
+      img {
+        display: block;
+        max-width: 100%;
+        height: auto;
+      }
+    }
+  }
+}
+
+.header__basket {
+
+}
+
+.basket {
+  position: relative;
+  background: url(/assets/img/icons.png) no-repeat -48px 0;
+  height: 48px;
+  text-decoration: none;
+  width: 46px;
+
+  span {
+    color: $white;
+    display: block;
+    font-size: 2rem;
+    font-weight: bold;
+    position: absolute;
+    left: 2.4rem;
+    top: 0.4rem;
+  }
+}

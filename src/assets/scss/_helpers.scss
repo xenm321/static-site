@@ -1,0 +1,17 @@
+/* Glyphicon */
+.glyphicon {
+  position: relative;
+  top: 0.1rem;
+  display: inline-block;
+}
+
+.glyphicon-search:before {
+  background: url(/assets/img/icons.png) no-repeat -24px -72px;
+  content: '';
+  display: inline-block;
+  height: 1.6rem;
+  left: 0;
+  overflow: hidden;
+  top: 0.25rem;
+  width: 1.6rem;
+}

@@ -1,0 +1,31 @@
+<% var header_data = {
+styles: htmlWebpackPlugin.files.css,
+title: "Контакты"
+}; %>
+<%= _.template(require('./../includes/header.html').default)(header_data) %>
+
+<%= _.template(require('./../includes/common/top_line.html').default)() %>
+<%= _.template(require('./../includes/common/header.html').default)() %>
+
+<div class="content">
+    <section class="section">
+        <div class="container">
+            <div class="section__header">
+                <h2 class="catalog__title">Контакты</h2>
+            </div>
+
+            <div>
+                <p>Производство находится в городе Павлово на Оке Нижегородской области. Здесь Вы можете заказать любые размеры поковок из сталей Х12МФ, 95Х18, ХВ5, 9ХС, ШХ15, ДАМАСК КРУЧЕНЫЙ И ПРЯМОЙ
+
+                    По всем вопросам касающимся сотрудничества, приобретения поковок, заготовок, литья (гарды, притины, оковки, больстеры, тыльники, темляки, навершие) и экзотической древесины вы можете связаться со мной:</p>
+            </div>
+        </div>
+    </section>
+</div>
+
+<%= _.template(require('./../includes/common/footer.html').default)() %>
+
+<% var footer_data = {
+scripts: htmlWebpackPlugin.files.js
+}; %>
+<%= _.template(require('./../includes/footer.html').default)(footer_data) %>

@@ -1,0 +1,49 @@
+<% var header_data = {
+    styles: htmlWebpackPlugin.files.css,
+    title: "Mastersknife"
+}; %>
+
+<%= _.template(require('./../includes/header.html').default)(header_data) %>
+
+<%= _.template(require('./../includes/common/top_line.html').default)() %>
+<%= _.template(require('./../includes/common/header.html').default)() %>
+
+<div class="content">
+    <div class="advertisement">
+        <div class="container">
+            <div class="advertisement__inner">
+
+                <div class="adv">
+                    <a href="#">
+                        <span class="adv__discount-label">3</span>
+                        <img src="assets/img/banners/banner-1.png" alt="">
+                    </a>
+                </div>
+
+                <div class="slider__wrapper">
+                    <%= _.template(require('./../includes/index/slider.html').default)() %>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <section class="catalog">
+        <div class="container">
+            <div class="catalog__header">
+                <h2 class="catalog__title">Каталог</h2>
+                <a class="catalog__link" href="#">Все товары</a>
+            </div>
+
+            <%= _.template(require('./../includes/index/product_list.html').default)() %>
+        </div>
+    </section>
+
+</div>
+
+<%= _.template(require('./../includes/common/footer.html').default)() %>
+
+<% var footer_data = {
+    scripts: htmlWebpackPlugin.files.js
+}; %>
+<%= _.template(require('./../includes/footer.html').default)(footer_data) %>

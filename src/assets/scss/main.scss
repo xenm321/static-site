@@ -1,0 +1,48 @@
+@import 'fonts';
+@import 'variables';
+@import 'helpers';
+@import '~slick-carousel/slick/slick.scss';
+@import "~slick-carousel/slick/slick-theme.scss";
+
+html {
+  font-size: 10px;
+}
+
+body {
+  margin: 0;
+  font-size: 1.5rem;
+  color: $black;
+  font-family: 'ProximaNova Regular', 'Arial', sans-serif;
+  min-height: calc(100vh - 80px);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+p {
+  margin: 0 0 1rem;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin: 0 auto;
+}
+
+.content {
+  min-height: calc(100vh - 305px);
+}
+
+@import 'components/common/top_line';
+@import 'components/common/header';
+@import 'components/common/footer';
+@import 'pages/index';
